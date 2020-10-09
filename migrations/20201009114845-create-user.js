@@ -9,21 +9,25 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        type: Sequelize.STRING
       },
       last_names: {
-        type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      age: {
+        allowNull: false,
+        type: Sequelize.INTEGER
       },
       email: {
-        type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
+        type: Sequelize.STRING
       },
       password: {
-        type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        type: Sequelize.STRING
       },
       active_account: {
         type: Sequelize.BOOLEAN

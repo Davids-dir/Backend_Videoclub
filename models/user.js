@@ -14,23 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   User.init({
-    name: {
-    type: DataTypes.STRING,
-    allowNull: false
-    },
-    last_names: {
-    type: DataTypes.STRING,
-    allowNull: false
-    },
-    email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true
-    },
-    password: {
-    tyep: DataTypes.STRING,
-    allowNull: false
-    },
+    name: DataTypes.STRING,
+    last_names: DataTypes.STRING,
+    age: DataTypes.INTEGER,
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
     active_account: DataTypes.BOOLEAN
   }, {
     sequelize,
