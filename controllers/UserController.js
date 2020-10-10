@@ -20,8 +20,8 @@ const UserController = {
     async profile (req, res) {
 
         try {
-            const read = await User.get ()
-            res.status (201).send (read)    
+            const profileUser = await User.findAll ({ where: {email: req.params.email }})
+            res.status (201).send (profileUser)
         } 
         catch (error) {
             console.error (error)
@@ -33,8 +33,8 @@ const UserController = {
     async delete (req, res) {
 
         try {
-            const rem_user =  await User.deleteOne (req.body);
-            res.status (201).send ({rem_user, message: `Tu usuario ha sido de dado de baja correctamente. Espermos volver a verte pronto ${User.name} !`})
+            const removeUser =  await User.destroy ({ where: {email: req.params.email}});
+            res.status (201).send ({removeUser, message: `Tu usuario ha sido de dado de baja correctamente. Espermos volver a verte pronto!`})
         } 
         catch (error) {
             console.error (error)
