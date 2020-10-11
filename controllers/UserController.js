@@ -1,5 +1,4 @@
 const {User} = require ('../models');
-const user = require('../models/user');
 
 const UserController = {
 
@@ -16,6 +15,7 @@ const UserController = {
         }
     },
 
+    // Funcion para hacer Login en la app
     async login (req, res) {
         
         try { 
@@ -31,7 +31,7 @@ const UserController = {
         }
     },
 
-    // Funcion para leer el perfil del usuario
+    // Funcion para acceder a los datos del perfil del usuario
     async profile (req, res) {
 
         try {

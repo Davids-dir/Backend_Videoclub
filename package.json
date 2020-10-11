@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Davids-dir/videoclub_api#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
