@@ -1,7 +1,7 @@
 {
   "name": "videoclub_api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reto Bootcamp FSD",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "express": "^4.17.1",
+    "heroku": "^7.45.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   }
