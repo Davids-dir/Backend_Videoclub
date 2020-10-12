@@ -7,7 +7,7 @@ const UserController = {
 
         try { 
             const registerUser = await User.create (req.body);
-            res.status (201).send (registerUser);
+            res.status (201).send ( {message: 'Te has registrado con exito.'} );
         } 
         catch (error) {
             console.error (error)
