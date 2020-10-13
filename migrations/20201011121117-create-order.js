@@ -15,7 +15,10 @@ module.exports = {
       return_date : {
         type: Sequelize.DATE
       },
-      UserId: {
+      user_id: {
+        type: Sequelize.INTEGER
+      },
+      movie_id: {
         type: Sequelize.INTEGER
       },
       createdAt: {

@@ -15,8 +15,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Order.init({
-    return_date: DataTypes.DATE,
-    UserId: DataTypes.INTEGER
+    user_id: DataTypes.INTEGER,
+    movie_id: DataTypes.INTEGER,
+    return_date: DataTypes.DATE
+
   }, {
     sequelize,
     modelName: 'Order',
