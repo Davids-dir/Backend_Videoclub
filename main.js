@@ -4,7 +4,7 @@ const moviesRouter = require ('./routes/movies');
 const ordersRouter = require ('./routes/orders');
 
 const app = express ();
-const PORT = procces.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use (express.json ());
 
