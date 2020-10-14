@@ -8,18 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      /*date: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },*/
-      return_date : {
-        type: Sequelize.DATE
-      },
       user_id: {
         type: Sequelize.INTEGER
       },
       movie_id: {
         type: Sequelize.INTEGER
+      },
+      return_date : {
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,
