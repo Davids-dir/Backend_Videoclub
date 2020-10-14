@@ -1,9 +1,5 @@
 # API REST Videoclub
 
-! [BBDD Description] (./img/MySQL_Videoclub.png)
-
-# API REST Videoclub
-
 API que simula la BBDD de un Videoclub mediante un Backend empleando JavaScript
 
 
@@ -41,7 +37,7 @@ Busqueda de la pelicula por el titulo _POST/title_
 Creacion de un pedido _POST /create_
 
 ## Observaciones
-API deployada a traves de Heroku mediante (https://bootcamp-reto-backend.herokuapp.com/)
+API deployada a traves de Heroku mediante https://bootcamp-reto-backend.herokuapp.com/
 
 
 ## License
