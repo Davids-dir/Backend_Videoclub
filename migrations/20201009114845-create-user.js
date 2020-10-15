@@ -16,10 +16,6 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      age: {
-        allowNull: false,
-        type: Sequelize.INTEGER
-      },
       email: {
         allowNull: false,
         unique: true,
