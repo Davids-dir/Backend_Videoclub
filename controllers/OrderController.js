@@ -23,7 +23,7 @@ const OrderController = {
     async create (req, res) {
         try {
             const return_date = new Date();
-            return_date.setDate(returnDate.getDate() + 2)
+            return_date.setDate(return_date.getDate() + 2)
             const order = await Order.create({
                 ...req.body, 
                 return_date
