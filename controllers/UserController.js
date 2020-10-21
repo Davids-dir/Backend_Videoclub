@@ -19,11 +19,17 @@ const UserController = {
     async login (req, res) {
         
         try { 
-            const loginUser = await User.findAll ({ where: {
+            const loginUser = await User.findOne ({ where: {
                 email: req.body.email,
                 password: req.body.password,
             }})
-            res.status (201).send ({message: 'Bienvenido de nuevo.'} )
+
+            if ( ! loginUser ){
+                res.status (400).send ( {message: 'Error en las credenciales, revisa los datos.'})
+            }
+            else {
+                res.status (201).send ({message: `Bienvenido de nuevo ${loginUser.name}.`})
+            }
         } 
         catch (error) {
             console.error (error)
